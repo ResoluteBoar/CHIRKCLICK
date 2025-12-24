@@ -3,7 +3,6 @@ package ru.vipuzis.chirkovaclick
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -15,7 +14,7 @@ import androidx.core.view.WindowInsetsCompat
 class MainActivity2 : AppCompatActivity() {
 
     val mainVM: MainViewModel by viewModels()
-    @SuppressLint("MissingInflatedId", "WrongViewCast")
+    @SuppressLint("MissingInflatedId", "WrongViewCast", "CutPasteId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -25,7 +24,7 @@ class MainActivity2 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val button2 = findViewById<ImageView>(R.id.achiveButton2)
+        val button2 = findViewById<ImageView>(R.id.achiveButton)
         val texCount = findViewById<TextView>(R.id.count)
 
         mainVM.count.observe(this) {count ->
@@ -35,14 +34,15 @@ class MainActivity2 : AppCompatActivity() {
         button2.setOnClickListener {
             mainVM.plus()
         }
-        val shopButton = findViewById<Button>(R.id.shopButton)
+        val shopButton = findViewById<ImageView>(R.id.shopButton)
         val intent = Intent(this, MainActivity3::class.java)
         shopButton.setOnClickListener {
             startActivity(intent)
         }
-    }
-
-    override fun onResume() {
-        super.onResume()
+        val achiveButton = findViewById<ImageView>(R.id.achiveButton)
+        val achive = Intent(this, AchiveActivity::class.java)
+        achiveButton.setOnClickListener {
+            startActivity(achive)
+        }
     }
 }

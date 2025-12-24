@@ -25,12 +25,12 @@
         android:layout_height="78dp"
         android:layout_marginStart="52dp"
         android:layout_marginTop="164dp"
-        app:layout_constraintStart_toEndOf="@+id/achiveButton1"
+        app:layout_constraintStart_toEndOf="@+id/achiveButton"
         app:layout_constraintTop_toBottomOf="@+id/textView9"
         app:srcCompat="@drawable/bvuhrbjgng_wiuwwq_ylj6tiq2xpeip68m_wv08vey20yaxrwngbod0xbxfhhniam2og5a6vgt2_u2azv78jf3lu" />
 
     <ImageView
-        android:id="@+id/achiveButton1"
+        android:id="@+id/achiveButton"
         android:layout_width="94dp"
         android:layout_height="79dp"
         android:layout_marginStart="24dp"

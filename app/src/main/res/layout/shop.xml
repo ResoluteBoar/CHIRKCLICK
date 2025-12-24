@@ -130,7 +130,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
     <ImageView
-        android:id="@+id/achiveButton2"
+        android:id="@+id/achiveButton"
         android:layout_width="103dp"
         android:layout_height="111dp"
         android:layout_marginStart="16dp"
@@ -140,17 +140,7 @@
         app:srcCompat="@drawable/_5_759695_award_achievement_winner_comments_chinese_flag_sticker" />
 
     <ImageView
-        android:id="@+id/achiveButton2"
-        android:layout_width="98dp"
-        android:layout_height="107dp"
-        android:layout_marginStart="168dp"
-        android:layout_marginTop="84dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView20"
-        app:srcCompat="@drawable/bvuhrbjgng_wiuwwq_ylj6tiq2xpeip68m_wv08vey20yaxrwngbod0xbxfhhniam2og5a6vgt2_u2azv78jf3lu" />
-
-    <ImageView
-        android:id="@+id/shopButton2"
+        android:id="@+id/achiveButton"
         android:layout_width="88dp"
         android:layout_height="91dp"
         android:layout_marginStart="296dp"
@@ -158,4 +148,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView20"
         app:srcCompat="@drawable/i" />
+
+    <ImageView
+        android:id="@+id/homeButton"
+        android:layout_width="96dp"
+        android:layout_height="81dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/achiveButton"
+        app:srcCompat="@drawable/bvuhrbjgng_wiuwwq_ylj6tiq2xpeip68m_wv08vey20yaxrwngbod0xbxfhhniam2og5a6vgt2_u2azv78jf3lu" />
 </androidx.constraintlayout.widget.ConstraintLayout>
